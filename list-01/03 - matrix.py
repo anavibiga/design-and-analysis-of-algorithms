@@ -28,5 +28,5 @@ matriz1 =  [[1, 0, 0],
 if teste_matriz(matriz1) == True:
     print('A matriz satisfaz os requisitos de uma matriz de permutação.')
 else:
-    print('A matriz não satisfaz os requisitos de uma matriz de permutação..')
+    print('A matriz não satisfaz os requisitos de uma matriz de permutação.')
 
