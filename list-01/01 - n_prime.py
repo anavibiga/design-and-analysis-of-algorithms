@@ -14,3 +14,10 @@ def primo(n):
 
 for i in range(num,0,-1):
     primo(i)
+if (num <1):
+    print('Tente novamente. O número inical precisa ser maior que 0.')
+    
+
+
+
+
