@@ -12,10 +12,10 @@ def primo(n):
     if (cdiv == 2):
         print('{} é primo.'.format(n))
 
-for i in range(num,0,-1):
+for i in range(num,1,-1):
     primo(i)
 if (num <1):
-    print('Tente novamente. O número inical precisa ser maior que 0.')
+    print('Tente novamente. O número inicial precisa ser maior que 0.')
     
 
 
