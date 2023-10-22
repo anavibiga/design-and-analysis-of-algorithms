@@ -1,19 +1,17 @@
+# Questão 08 - Encontrar o menor elemento da lista e mover pra primeira posição
 
-a = int(input('Adicione um número na lista: '))
-b = int(input('Adicione um número na lista: '))
-c = int(input('Adicione um número na lista: '))
-d = int(input('Adicione um número na lista: '))
-
+# Definindo a classe Node
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
 
+# Definindo a classe LinkedList
 class LinkedList:
     def __init__(self):
         self.head = None
 
-    # Método para adicionar um novo nó com dados à lista
+    # Método para adicionar um novo nó
     def append(self, data):
        new_node = Node(data)
        new_node.next = self.head
@@ -52,7 +50,13 @@ class LinkedList:
             current = current.next
         print('None')
 
-# Exemplo de uso
+# Recebendo os números do usuário
+a = int(input('Adicione um número na lista: '))
+b = int(input('Adicione um número na lista: '))
+c = int(input('Adicione um número na lista: '))
+d = int(input('Adicione um número na lista: '))
+
+# Criando a lista encadeada
 lista = LinkedList()
 lista.append(a)
 lista.append(b)
@@ -62,6 +66,7 @@ lista.append(d)
 print('\nLista original: ')
 lista.display()
 
+# Levando o menor elemento para o início da lista
 lista.move_smallest_to_front()
 
 print('\nLista após mover o menor elemento para o início: ')

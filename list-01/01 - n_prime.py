@@ -1,7 +1,6 @@
-# Exercicio 01 - n (>1) primeiros primos dado um valor n (>0) dado pelo usuário
+# Questão 01 - n (>1) primeiros primos dado um valor n (>0) dado pelo usuário
 
-num = int(input('Diga o número inicial: '))
-
+# Criando a função primo
 def primo(n):
     c = 1
     cdiv = 0
@@ -12,12 +11,11 @@ def primo(n):
     if (cdiv == 2):
         print('{} é primo.'.format(n))
 
+# Recebendo o número do usuário
+num = int(input('Diga o número inicial: '))
+
+# Encontrando quais números são primos
 for i in range(num,1,-1):
     primo(i)
 if (num <1):
     print('Tente novamente. O número inicial precisa ser maior que 0.')
-    
-
-
-
-

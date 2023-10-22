@@ -1,8 +1,12 @@
+# Questão 10 - Inverter a ordem de uma lista encadeada
+
+# Definindo a classe Node
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
 
+# Definindo a classe LinkedList
 class LinkedList:
     def __init__(self):
         self.head = None

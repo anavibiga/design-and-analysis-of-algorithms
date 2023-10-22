@@ -1,6 +1,4 @@
-
-m = int(input('Digite um número para inserir na lista: '))
-n = int(input('Digite outro número para inserir na lista: '))
+# Questão 07 - Criação de lista encadeada e mudança de posição de dois elementos
 
 # Definindo a classe Node
 class Node:
@@ -65,8 +63,12 @@ class LinkedList:
         result.append('None')
         return ' -> '.join(map(str, result))
 
-# Criando uma instância da lista encadeada
+# Criando a lista encadeada
 my_list = LinkedList()
+
+# Recebendo os números do usuário
+m = int(input('Digite um número para inserir na lista: '))
+n = int(input('Digite outro número para inserir na lista: '))
 
 # Inserindo itens na lista
 my_list.insert_at_beginning(5)
@@ -74,13 +76,12 @@ my_list.insert_at_beginning(m)
 my_list.insert_at_beginning(n)
 my_list.insert_at_beginning(15)
 
-# Imprimindo a lista antes da troca
 print('\nLista antes da troca: ')
 print(my_list)
 
 # Trocando dois nós consecutivos
 my_list.swap_nodes(m, n)
 
-# Imprimindo a lista após a troca
+# Mostrando a lista pós troca
 print('\nLista após a troca: ')
 print(my_list)
