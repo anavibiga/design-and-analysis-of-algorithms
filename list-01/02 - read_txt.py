@@ -2,6 +2,7 @@
 
 with open('texto.txt') as arquivo:
     texto = arquivo.read()
+    texto = texto.lower()
 
 vogais = ['a', 'e', 'i', 'o', 'u']
 
